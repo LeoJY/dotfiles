@@ -1,0 +1,27 @@
+# .gitconfig
+
+[user]
+	name = LeoJY
+	email = leojy1993@gmail.com
+
+[color]
+	ui = auto
+    diff = auto
+    interactive = auto
+    pager = true
+  
+[color "status"]
+    added = blue
+    changed = red
+    untracked = magenta
+
+[color "branch"]
+    local = yellow
+    remote = magenta
+	current = yellow reverse
+
+[color "diff"]
+    meta = yellow
+    frag = magenta bold
+    old = red
+    new = blue
