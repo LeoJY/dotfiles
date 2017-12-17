@@ -16,6 +16,7 @@ if [ -f ~/.git-completion.bash ]; then
   __git_complete gl _git_log
   __git_complete gp _git_pull
   __git_complete gs _git_status
+  __git_complete gsh _git_stash
 fi
 
 
@@ -40,6 +41,7 @@ alias gd='git diff'
 alias gl='git log'
 alias gp='git pull'
 alias gs='git status'
+alias gsh='git stash'
 
 # set path for coding
 alias code='cd /Users/junyiliu/Documents/Coding'
