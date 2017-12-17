@@ -25,3 +25,7 @@
     frag = magenta bold
     old = red
     new = blue
+[core]
+	editor = emacs
+[commit]
+	template = /Users/junyiliu/.gitmessage.txt
