@@ -10,6 +10,7 @@ if [ -f ~/.git-completion.bash ]; then
   . ~/.git-completion.bash
 # make alias for git work with git auto-completion
   __git_complete ga _git_add
+  __git_complete gb _git_branch
   __git_complete gc _git_checkout
   __git_complete gd _git_diff
   __git_complete gl _git_log
@@ -33,6 +34,7 @@ alias ..='cd ..'
 alias ...='cd ../../'
 
 alias ga='git add'
+alias gb='git branch'
 alias gc='git checkout'
 alias gd='git diff'
 alias gl='git log'
