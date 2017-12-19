@@ -29,6 +29,8 @@ alias ln='ln -i'
 alias em='emacs'
 
 alias ll='ls -al'
+alias cl='clear'
+alias ex='exit'
 
 alias ~='cd ~'
 alias ..='cd ..'
