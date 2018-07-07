@@ -4,3 +4,5 @@
 if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
+
+export PATH=$PATH:$GOPATH/bin
