@@ -45,9 +45,6 @@ alias gp='git pull'
 alias gs='git status'
 alias gsh='git stash'
 
-# set path for coding
-alias code='cd /Users/junyiliu/Documents/Coding'
-
 # color setting for LS
 export CLICOLOR=1
 export LSCOLORS=exfxcxdxbxegedabagacad
