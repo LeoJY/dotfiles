@@ -1,15 +1,15 @@
 # .gitconfig
 
 [user]
-	name = LeoJY
-	email = leojy1993@gmail.com
+    name = LeoJY
+    email = leojy1993@gmail.com
 
 [color]
-	ui = auto
+    ui = auto
     diff = auto
     interactive = auto
     pager = true
-  
+
 [color "status"]
     added = blue
     changed = red
@@ -18,14 +18,16 @@
 [color "branch"]
     local = yellow
     remote = magenta
-	current = yellow reverse
+    current = yellow reverse
 
 [color "diff"]
     meta = yellow
     frag = magenta bold
     old = red
     new = blue
+
 [core]
-	editor = emacs
+    editor = emacs
+
 [commit]
-	template = /Users/junyiliu/.gitmessage.txt
+    template = /Users/junyiliu/.gitmessage.txt

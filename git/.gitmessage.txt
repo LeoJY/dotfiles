@@ -1,4 +1,4 @@
-subject line
+Subject line
 
 * what happened
 
