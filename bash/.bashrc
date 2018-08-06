@@ -2,8 +2,10 @@
 
 # Source global definitions
 if [ -f /etc/bashrc ]; then
-	. /etc/bashrc
+        . /etc/bashrc
 fi
+
+# User specific aliases and functions
 
 # Get the git auto-completion
 if [ -f ~/.git-completion.bash ]; then
@@ -13,12 +15,14 @@ if [ -f ~/.git-completion.bash ]; then
   __git_complete gb _git_branch
   __git_complete gc _git_checkout
   __git_complete gd _git_diff
+  __git_complete gf _git_fetch
   __git_complete gl _git_log
   __git_complete gp _git_pull
   __git_complete gs _git_status
   __git_complete gsh _git_stash
 fi
 
+alias gbd='git branch | grep -v "master" >/tmp/not-master-branches && emacs /tmp/not-master-branches && xargs git branch -D </tmp/not-master-branches'
 
 # alias definition
 alias rm='rm -i'
@@ -30,7 +34,6 @@ alias em='emacs'
 
 alias ll='ls -al'
 alias cl='clear'
-alias ex='exit'
 
 alias ~='cd ~'
 alias ..='cd ..'
@@ -40,6 +43,7 @@ alias ga='git add'
 alias gb='git branch'
 alias gc='git checkout'
 alias gd='git diff'
+alias gf='git fetch'
 alias gl='git log'
 alias gp='git pull'
 alias gs='git status'
@@ -51,6 +55,7 @@ export LSCOLORS=exfxcxdxbxegedabagacad
 
 # highlight grep matches
 export GREP_OPTIONS='--color=auto'
+
 
 # set GOPATH
 export GOPATH=$HOME/Documents/Coding/Go
@@ -103,4 +108,4 @@ function parse_git_dirty {
 }
 
 # customize the shell prompt 
-export PS1="\[\e[32m\]\u\[\e[m\]@\h \[\e[36m\]\W\[\e[m\]\[\e[31m\]\`parse_git_branch\`\[\e[m\$\] "
+export PS1="\[\e[35m\]\u\[\e[m\]\[\e[37m\]@\[\e[m\]\[\e[36m\]\h\[\e[m\] \[\e[33m\]\W\[\e[m\]\[\e[31m\]\`parse_git_branch\`\[\e[m\$\] "

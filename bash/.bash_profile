@@ -6,3 +6,4 @@ if [ -f ~/.bashrc ]; then
 fi
 
 export PATH=$PATH:$GOPATH/bin
+export PATH="/usr/local/sbin:$PATH"
