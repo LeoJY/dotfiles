@@ -1,2 +1,2 @@
 # dotfiles
-upload all my dot files including .bashrc, .bash_profile, .emacs etc.
+upload all my dotfiles including bash settings and git settings
