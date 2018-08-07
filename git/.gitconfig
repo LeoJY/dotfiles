@@ -30,4 +30,4 @@
     editor = emacs
 
 [commit]
-    template = /Users/junyiliu/.gitmessage.txt
+    template = /Users/junyiliu/.gitmessage
