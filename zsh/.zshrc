@@ -112,6 +112,7 @@ alias mv='mv -i'
 alias ln='ln -i'
 
 alias cl='clear'
+alias em='emacs'
 
 # tree enhance
 alias tree='tree -C'
