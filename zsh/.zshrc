@@ -116,3 +116,6 @@ alias em='emacs'
 
 # tree enhance
 alias tree='tree -C'
+
+# Alias for git-delete-merged-branch
+alias gbdm='/usr/local/bin/git-delete-merged-branches'
